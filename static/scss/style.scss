@@ -151,7 +151,7 @@ header {
 
             .navbar {
                 display: none;
-                height: 40px;
+                height: 25px;
                 @media screen and (max-width: 720px){
                     display: block;    
                 }
@@ -208,6 +208,9 @@ header {
             }
         }
 
+        @media screen and (min-width: 725px){
+            display: none;
+        }
     }
 
     .to_top_scroll {
@@ -429,8 +432,16 @@ main{
         }
         .text {
             width: 60%;
+            @media screen and (max-width: 1600px){
+                margin-left: 20%;
+            }
+            @media screen and (max-width: 1300px){
+
+                margin-left: 20%;
+            }
             @media screen and (max-width: 1000px){
                 width: 100%;
+                margin-left: 0  ;
             }
 
             p {
